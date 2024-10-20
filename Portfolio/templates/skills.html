@@ -1,0 +1,96 @@
+{% load static %}
+{% block body %}
+
+<div class="container text-center">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <div class="skill-card d-flex flex-column justify-content-between p-3 shadow">
+              <div class="head p-2">
+                <div class="skill-icon__image mb-2">
+                  <img src="{% static 'frontendImg.jpg' %}" alt="skill" class="img-thumbnail" style="max-width: 100%; height: 200px; width: 200px;">
+                </div>
+                <h3 class="subtitle fw-bold text-black">Frontend Developer</h3>
+                <p class="description text-black">
+                  User experience is key. Let's make it accessible, intuitive, and delightful.
+                </p>
+              </div>
+              <div class="body p-2">
+                <p class="description text-indigo"><i>Frontend Language Stack</i></p>
+                <p class="description text-dark">
+                  HTML, CSS, Javascript, Angular
+                </p>
+              </div>
+              <div class="foot p-2">
+                <p class="description text-indigo"><i>Design Tools:</i></p>
+                <ul class="tools__list list-unstyled">
+                    <li><p class="description text-black">VS Code</p></li>
+                  <li><p class="description text-black">Typescript</p></li>
+                  <li><p class="description text-black">Bootstrap</p></li>
+                  <li><p class="description text-black">NPM</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+    <!-- Backend Developer Card -->
+<div class="col-md-4">
+    <div class="skill-card d-flex flex-column justify-content-between p-3 shadow">
+      <div class="head p-2">
+        <div class="skill-icon__image mb-2">
+          <img src="{% static 'backendImg.jpg' %}" alt="skill" class="img-thumbnail" style="max-width: 100%; height: 200px; width: 200px;">
+        </div>
+        <h3 class="subtitle fw-bold text-black">Backend Developer</h3>
+        <p class="description text-black">
+          Let's build a scalable, secure, and reliable system to power the application.
+        </p>
+      </div>
+      <div class="body p-2">
+        <p class="description text-indigo"><i>Backend Language Stack</i></p>
+        <p class="description text-dark">.Net Core, Django</p>
+      </div>
+      <div class="foot p-2">
+        <p class="description text-indigo"><i>Design Tools:</i></p>
+        <ul class="tools__list list-unstyled">
+          <li><p class="description text-black">Visual Studio</p></li>
+          <li><p class="description text-black">C#</p></li>
+          <li><p class="description text-black">Python</p></li>
+          <li><p class="description text-black">Postman</p></li>
+          <li><p class="description text-black">PIP(Pip install packages)</p></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Others Card -->
+  <div class="col-md-4">
+    <div class="skill-card d-flex flex-column justify-content-between p-3 shadow">
+      <div class="head  p-2">
+        <div class="skill-icon__image mb-2">
+          <img src="{% static 'otherImg.jpg' %}" alt="skill" class="img-thumbnail" style="max-width: 100%; height: 200px; width: 200px;">
+        </div>
+        <h3 class="subtitle fw-bold text-black">Others</h3>
+        <p class="description text-black">
+          Let's collab and build better future for the people to enhance tech.
+        </p>
+      </div>
+      <div class="body  p-2">
+        <p class="description text-indigo"><i>Skills Stack</i></p>
+        <p class="description text-dark">SQL, Version Control</p>
+      </div>
+      <div class="foot p-2">
+        <p class="description text-indigo"><i>Tools:</i></p>
+        <ul class="tools__list list-unstyled">
+          <li><p class="description text-black">Git & Github</p></li>
+          <li><p class="description text-black">SSMS</p></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+
+{% endblock body %}
