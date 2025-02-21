@@ -1,14 +1,17 @@
-#!/usr/bin/env bsh
-#exit on error
-
+#!/usr/bin/env bash
+# Exit on error
 set -o errexit
 
+# Install dependencies
 pip install -r requirements.txt
 
+# Collect static files
 python manage.py collectstatic --no-input
-python manage,py migrate
-if [[$CREATE_SUPERUSER]];
-then
+
+# Apply database migrations
+python manage.py migrate
+
+# Create a superuser if the environment variable is set
+if [[ "$CREATE_SUPERUSER" == "true" ]]; then
     python manage.py createsuperuser --no-input --email "$DJANGO_SUPERUSER_EMAIL"
 fi
-
