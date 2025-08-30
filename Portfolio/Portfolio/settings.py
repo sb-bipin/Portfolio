@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # 'django_dump_die',
     # 'phone_field',
     'home.apps.HomeConfig',
+    'django_distill',
 ]
 
 MIDDLEWARE = [
