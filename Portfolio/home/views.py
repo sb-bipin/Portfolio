@@ -21,12 +21,14 @@ def skills(request):
 def contact(request):
     return render(request, 'contact.html')
     
-
 def resume(request):
-    file_path = staticfiles_storage.path('resumenew.pdf')
-    if file_path:
-        return FileResponse(open(file_path, 'rb'), content_type='application/pdf')
-    else:
-        return HttpResponseNotFound('The requested file was not found.')    
+    return render(request, "resume.html")
+
+# def resume(request):
+#     file_path = staticfiles_storage.path('resumenew.pdf')
+#     if file_path:
+#         return FileResponse(open(file_path, 'rb'), content_type='application/pdf')
+#     else:
+#         return HttpResponseNotFound('The requested file was not found.')    
 
 
