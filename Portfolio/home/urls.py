@@ -28,6 +28,6 @@ urlpatterns = [
     distill_path("experience/", views.experience, name='experience', distill_func=get_none),
     distill_path("skills/", views.skills, name='skills', distill_func=get_none),
     distill_path("contact/", views.contact, name='contact', distill_func=get_none),
-    # distill_path("resume/", views.resume, name='resume', distill_func=get_none),
+    distill_path("/resume/", views.resume, name='resume', distill_func=get_none),
 ]
 
