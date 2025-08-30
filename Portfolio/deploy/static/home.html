@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block body %}
+  <div class="container">
+    <div class="row align-items-center col-lg-12 col-md-5" style="width: 100%; ">
+      {% comment %}
+      <div class="col-lg-6 col-md-7 mt-1" style=" ">
+        <img src="{% static 'pp.jpeg' %}" class="rounded img-thumbnail" alt="Img..." />
+      </div> {% endcomment %}
+
+      <div style="">
+        <h2 class="text-center p-1 rounded" style="font-family: Showcard Gothic,Magneto,Harlow Solid Italic,Arial, sans-serif; font-size: 30px;">Full Stack .Net Developer with Angular and MSSQL</h2>
+        <h4 class="text-center" style="font-family: Arial, sans-serif; font-size: 30px;">"The IT industry: where yesterday’s breakthrough is today’s status quo, and tomorrow’s challenge is already in beta."</h4>
+      </div>
+
+      <div class="mt-1" style=" ">
+        <img src="{% static 'code.webp' %}" class="rounded img-thumbnail mx-auto d-block" style="height:300px;width:500px;" alt="Img..." />
+      </div>
+
+      <div class="">
+        <h2 class="text-center p-1 rounded" style="font-family: Magneto,Harlow Solid Italic,Arial, sans-serif; font-size: 30px;">Good Morning Pals..</h2>
+        <p class="text-center rounded" style="font-family: Harlow Solid Italic,Arial, sans-serif;
+                     font-size: 25px;">
+          Hello, I'm <i class="text-success">Bipin Paudel</i>. I'm new to web development and excited to begin this journey. While I'm still learning, I'm passionate about building <span class="text-info">user-friendly web applications</span> and eager to develop my skills in creating clean and effective code. <br />
+          <span class="font-weight-bold">Looking forward to growing in this field..!</span>
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
